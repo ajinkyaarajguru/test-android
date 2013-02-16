@@ -2,7 +2,7 @@ public class USS {
 
 	public static void main(String[] args) {
 
-		System.out.println("Final result " + checkNumber(45623));
+		System.out.println("Final result " + checkNumber(112357));
 	}
 
 	public static boolean checkNumber(int number) {
@@ -10,7 +10,6 @@ public class USS {
 		boolean flag=true;
 		StringBuffer b = new StringBuffer();
 		b.append(number);
-		System.out.println(b);
 		for (int i = 0; i < b.length()-1; i++) {
 			if (Integer.parseInt(String.valueOf(b.charAt(i))) > Integer.parseInt(String.valueOf(b.charAt(i + 1)))) {
 				flag = false;
